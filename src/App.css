@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/node_modules/font-awesome/fonts/fontawesome-webfont.woff2')
+            format('woff2'),
+        url('/node_modules/font-awesome/fonts/fontawesome-webfont.woff')
+            format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #121212;
+    border-radius: 20px;
+    width: 350px;
+    padding: 30px 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 0, 150, 0.3),
+        rgba(0, 204, 255, 0.3)
+    );
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1em;
+    color: #bbb;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tag {
+    background: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.tag i {
+    margin-right: 8px;
+}
+
+.tag:hover {
+    background: #00bcd4;
+    transform: scale(1.1);
+}
+
+.tag-1 {
+    background: #4caf50;
+}
+
+.tag-2 {
+    background: #ff9800;
+}
+
+.tag-3 {
+    background: #2196f3;
+}
