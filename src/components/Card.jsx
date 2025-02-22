@@ -12,14 +12,15 @@ export default function Card() {
                 and Vue.js.
             </p>
             <div className="tags">
-                <Tag name="HTML" type="code" />
-                <Tag name="CSS" type="code" />
-                <Tag name="JavaScript" type="code" />
-                <Tag name="PHP" type="code" />
-                <Tag name="Vue" type="code" />
-                <Tag name="Laravel" type="code" />
-                <Tag name="MySQL" type="database" />
-                <Tag name="WordPress" type="layer-group" />
+                <Tag level="" name="HTML" type="code" />
+                <Tag level="" name="CSS" type="code" />
+                <Tag level="" name="JavaScript" type="code" />
+                <Tag level="" name="TypeScript" type="code" />
+                <Tag level="" name="PHP" type="code" />
+                <Tag level="" name="Vue" type="code" />
+                <Tag level="" name="Laravel" type="code" />
+                <Tag level="" name="MySQL" type="database" />
+                <Tag level="" name="WordPress" type="layer-group" />
             </div>
         </div>
     );

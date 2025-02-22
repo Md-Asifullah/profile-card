@@ -35,7 +35,7 @@ export default function Tag({ name, type = 'code' }) {
     const getRandomNumber = () => {
         return Math.floor(Math.random() * 29);
     };
-
+    // 💪 👶 👦
     const randomColor = bgColors[getRandomNumber()];
     return (
         <div className="tag" style={{ backgroundColor: randomColor }}>
